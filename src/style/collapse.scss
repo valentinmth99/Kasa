@@ -1,0 +1,45 @@
+.collapse-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 82.5%;
+  .collapse {
+
+    .collapse-title {
+      background-color: #ff6060;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 700;
+      font-size: 24px;
+      color: white;
+      height: 52px;
+      padding: 0 17.5px;
+      border-radius: 5px;
+    }
+  }
+}
+  
+  .collapse-title img {
+    transition: transform 0.4s ease;
+  }
+  
+  .collapse.open .collapse-title img {
+    transform: rotate(-180deg);
+  }
+  
+  .collapse.open p {
+    animation-duration: 0.4s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-top: -16px;
+    }
+  
+    to {
+        margin-top: 16px;
+    }
+  }

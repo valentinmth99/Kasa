@@ -1,0 +1,41 @@
+header {
+  @include flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 45px;
+  width: 86%;
+  nav {
+    @include flex;
+    gap: 57px;
+    a {
+      @include link-unstyle;
+      @include h2;
+    }
+    .active {
+      text-decoration: underline;
+    }
+  }
+  img {
+    width: 14.6%;
+    max-width: 210px;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    margin: 0 20px;
+    nav {
+      gap: 26px;
+      width: 51%;
+      justify-content: flex-end;
+      a {
+        text-transform: uppercase;
+        font-size: 12px;
+        text-align: right;
+      }
+    }
+    img {
+      width: 38%;
+    }
+  }
+}

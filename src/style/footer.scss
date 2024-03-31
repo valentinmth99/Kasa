@@ -1,0 +1,35 @@
+footer {
+  width: 100%;
+  height: 209px;
+  @include flex;
+  background: #000;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  p {
+    @include h2;
+    color: $secondary-color;
+    @include no-pm;
+  }
+  img {
+    width: 11.8%;
+    max-width: 122px;
+    height: auto;
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  footer {
+    gap: 10px;
+    p {
+      font-size: 12px;
+      max-width: 130px;
+      text-align: center;
+    }
+    img {
+      width: 32.6%;
+      padding: 0;
+    }
+  }
+}

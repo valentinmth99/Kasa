@@ -1,0 +1,108 @@
+@import "../globals.scss";
+@import "./footer.scss";
+@import "./header.scss";
+@import "./collapse.scss";
+
+main {
+  width: 86%;
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 50px;
+}
+
+.banner {
+  width: 100%;
+  height: 223px;
+  border-radius: 25px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  .bg-banner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 2;
+    opacity: 0.6;
+
+    &.about {
+      opacity: 0.3;
+    }
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    @include xy-0;
+    z-index: 1;
+  }
+
+  p {
+    @include xy-center;
+    font-weight: 700;
+    font-size: 48px;
+    color: $secondary-color;
+    z-index: 3;
+  }
+}
+
+/* <----------------------------------------------------------------> */
+
+.main-home {
+ 
+  .logements-container {
+    background: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    .logements-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 60px;
+      grid-row-gap: 50px;
+      place-items: center;
+      padding: 50px;
+      .logement-card {
+        border-radius: 10px;
+        width: 100%;
+        height: 340px;
+        overflow: hidden;
+        position: relative;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        p {
+          position: absolute;
+          left: 20px;
+          right: 20px;
+          bottom: 0px;
+          color: white;
+          font-weight: 700;
+          font-size: 18px;
+        }
+      }
+    }
+
+    .logements-nav {
+      margin-bottom: 30px;
+      button {
+        background: none;
+        border: 0;
+      }
+
+      button:hover {
+        cursor: pointer;
+      }
+
+      button:disabled {
+        opacity: 0.5;
+        cursor: auto;
+      }
+    }
+  }
+}

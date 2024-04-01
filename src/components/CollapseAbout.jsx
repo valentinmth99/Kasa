@@ -39,7 +39,7 @@ const CollapseAbout = () => {
             <h3>{item.title}</h3>
             <img src="../assets/arrow-collapse.svg" alt="flèche" width="24" onClick={() => handleClick(index)} />
           </div>
-          {activeIndexes.includes(index) && <p>{item.text}</p>}
+          <p className={`collapse-text ${activeIndexes.includes(index) ? 'visible' : 'hidden'}`}>{item.text}</p>
         </div>
       ))}
     </div>

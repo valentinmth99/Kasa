@@ -53,6 +53,7 @@ main {
 .main-home {
  
   .logements-container {
+    width: 100%;
     background: #f6f6f6;
     display: flex;
     flex-direction: column;
@@ -61,13 +62,14 @@ main {
     .logements-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      grid-column-gap: 60px;
-      grid-row-gap: 50px;
+      width: 100%;
       place-items: center;
       padding: 50px;
+      row-gap: 50px;
+      padding: 50px 0;
       .logement-card {
         border-radius: 10px;
-        width: 100%;
+        width: 340px;
         height: 340px;
         overflow: hidden;
         position: relative;

@@ -4,7 +4,7 @@
     gap: 30px;
     width: 82.5%;
   .collapse {
-
+    position: relative;
     .collapse-title {
       background-color: #ff6060;
       display: flex;
@@ -28,18 +28,17 @@
   .collapse.open .collapse-title img {
     transform: rotate(-180deg);
   }
-  
-  .collapse.open p {
-    animation-duration: 0.4s;
-    animation-name: slidein;
+
+  .collapse-text {
+    background: #f6f6f6;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0;
+  padding: 20px;
+  border-radius: 5px;
+  }
+
+  .hidden {
+    display: none;
   }
   
-  @keyframes slidein {
-    from {
-      margin-top: -16px;
-    }
-  
-    to {
-        margin-top: 16px;
-    }
-  }

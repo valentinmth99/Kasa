@@ -42,3 +42,18 @@
     display: none;
   }
   
+  @media (max-width: 600px) {
+    .collapse-container {
+      width: 100%;
+      gap: 20px;
+      .collapse {
+        .collapse-title {
+          height: 30px;
+          font-size: 13px;
+        }
+        .collapse-text {
+          font-size: 12px;
+        }
+      }
+    }
+  }

@@ -18,7 +18,7 @@ function LogementList() {
   const goToNextPage = () => {
     setCurrentPage(currentPage + 1);
   };
-  console.log(currentLogements);
+  
   return (
     <div className="logements-container">
       <div className="logements-grid">

@@ -3,6 +3,7 @@
 @import "./header.scss";
 @import "./collapse.scss";
 @import "./banner.scss";
+@import "./page404.scss";
 
 main {
   width: 86%;
@@ -13,12 +14,12 @@ main {
   row-gap: 50px;
 }
 
+
 /* <----------------------------------------------------------------> */
 
 .main-home {
   margin: 50px 0;
   .logements-container {
-    width: 100%;
     background: #f6f6f6;
     display: flex;
     flex-direction: column;
@@ -31,11 +32,11 @@ main {
       place-items: center;
       padding: 50px;
       row-gap: 50px;
-      padding: 50px 0;
+      column-gap: 60px;
       .logement-card {
         border-radius: 10px;
-        width: 340px;
-        height: 340px;
+        width: 100%;
+        aspect-ratio: 1/1;
         overflow: hidden;
         position: relative;
         img {
@@ -91,6 +92,7 @@ main {
         .logement-card {
           width: 100%;
           height: 255px;
+          aspect-ratio: unset;
         }
       }
       .logements-nav {

@@ -1,4 +1,5 @@
 import React from "react";
+
 import LogementList from "../components/LogementList";
 import BannerHome from "../components/BannerHome";
 

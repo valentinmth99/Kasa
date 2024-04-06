@@ -14,8 +14,9 @@ const AppRouter = () => {
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/a-propos" element={<About />} />
-            <Route path='/logement' element={<Accommodation />} />
+            <Route path='/logement/:id' element={<Accommodation />} />
             <Route path='*' element={<Page404 />} />
+            <Route path='/404' element={<Page404 />} />
         </Routes>
     </Router>
   )

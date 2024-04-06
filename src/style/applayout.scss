@@ -4,6 +4,8 @@
 @import "./collapse.scss";
 @import "./banner.scss";
 @import "./page404.scss";
+@import "./carousel.scss";
+@import "./accomodation.scss";
 
 main {
   width: 86%;
@@ -13,7 +15,6 @@ main {
   align-items: center;
   row-gap: 50px;
 }
-
 
 /* <----------------------------------------------------------------> */
 
@@ -25,12 +26,13 @@ main {
     flex-direction: column;
     align-items: center;
     border-radius: 25px;
+    padding: 0 50px;
     .logements-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       width: 100%;
       place-items: center;
-      padding: 50px;
+      padding: 50px 0;
       row-gap: 50px;
       column-gap: 60px;
       .logement-card {
@@ -84,6 +86,7 @@ main {
     margin: 30px 0;
     .logements-container {
       background: none;
+      padding: 0;
       .logements-grid {
         display: flex;
         flex-direction: column;

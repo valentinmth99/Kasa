@@ -1,14 +1,16 @@
-import React from 'react'
-import BannerAbout from '../components/BannerAbout'
-import CollapseAbout from '../components/CollapseAbout'
+import React from "react";
+
+import BannerAbout from "../components/BannerAbout";
+import Collapse from "../components/Collapse";
+import aboutData from "../data/aboutCollapseData.json";
 
 const About = () => {
   return (
     <main>
       <BannerAbout />
-      <CollapseAbout />
+      <Collapse data={aboutData} className="about-container" />
     </main>
-  )
-}
+  );
+};
 
-export default About
+export default About;

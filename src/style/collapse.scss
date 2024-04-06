@@ -1,38 +1,37 @@
-.collapse-container {
+.about-container {
   display: flex;
   flex-direction: column;
   gap: 30px;
   width: 82.5%;
-  .collapse {
-    overflow: hidden;
-    .collapse-title {
-      position: relative;
-      background-color: #ff6060;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      font-weight: 700;
-      font-size: 24px;
-      color: white;
-      height: 52px;
-      padding: 0 17.5px;
-      border-radius: 5px;
-      z-index: 2;
-      img {
-        transition: transform 0.4s ease;
-      }
-    }
-  }
-  .collapse.open {
-    overflow: hidden;
-    .collapse-title img {
-      transform: rotate(-180deg);
+}
+
+.collapse {
+  overflow: hidden;
+  .collapse-title {
+    position: relative;
+    background-color: #ff6060;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    font-size: 24px;
+    color: white;
+    height: 52px;
+    padding: 0 17.5px;
+    border-radius: 5px;
+    z-index: 2;
+    img {
+      transition: transform 0.4s ease;
     }
   }
 }
-
-
+.collapse.open {
+  overflow: hidden;
+  .collapse-title img {
+    transform: rotate(-180deg);
+  }
+}
 .collapse-text {
   background: #f6f6f6;
   font-weight: 400;
@@ -46,13 +45,13 @@
   position: relative;
   &.visible {
     animation: slideDown 0.4s ease;
-    max-height: 150px;
+    max-height: 500px;
     padding: 20px;
     transition: max-height 0.5s ease-in;
   }
   &.hidden {
-    animation: slideUp 0.3s linear;
-    transition: max-height 0.3s ease-in;
+    animation: slideUp 0.3s ease-in-out;
+    transition: max-height 0.3s ease;
   }
 }
 
@@ -76,18 +75,51 @@
   }
 }
 
+.accomodation-container {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 75px;
+  width: 100%;
+  .collapse {
+    width: 50%;
+    .collapse-title {
+      font-size: 18px;
+      h3 {
+        margin: 0;
+      }
+    }
+  }
+}
 
 @media (max-width: 600px) {
-  .collapse-container {
+  .about-container {
     width: 100%;
     gap: 20px;
-    .collapse {
-      .collapse-title {
-        height: 30px;
+  }
+  .collapse {
+    width: 100%;
+    .collapse-title {
+      height: 30px;
+      h3 {
         font-size: 13px;
       }
-      .collapse-text {
-        font-size: 12px;
+      img {
+        width: 16px;
+      }
+    }
+    .collapse-text {
+      font-size: 12px;
+    }
+  }
+
+  .accomodation-container {
+    flex-direction: column;
+    gap: 20px;
+    .collapse {
+      width: 100%;
+
+      .collapse-title {
+        font-size: 13px;
       }
     }
   }

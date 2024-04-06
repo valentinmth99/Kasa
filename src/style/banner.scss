@@ -35,17 +35,17 @@
 }
 
 @media (max-width: 600px) {
-    .banner {
-        height: 111px;
-        box-shadow: unset;
-        border-radius: 10px;
-        p {
-            font-size: 24px;
-            bottom: 50%;
-            left: 16px;
-            top:unset;
-            transform: translateY(50%);
-            max-width: 68%;
-        }
+  .banner {
+    height: 111px;
+    box-shadow: unset;
+    border-radius: 10px;
+    p {
+      font-size: 24px;
+      bottom: 50%;
+      left: 16px;
+      top: unset;
+      transform: translateY(50%);
+      max-width: 68%;
     }
+  }
 }

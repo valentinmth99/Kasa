@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import LogementCard from "./LogementCard";
 import logements from "../data/logements.json";
+import { Link } from "react-router-dom";
 
 function LogementList() {
   const [currentPage, setCurrentPage] = useState(1);
@@ -18,16 +19,18 @@ function LogementList() {
   const goToNextPage = () => {
     setCurrentPage(currentPage + 1);
   };
-  
+
   return (
     <div className="logements-container">
       <div className="logements-grid">
         {currentLogements.map((logement) => (
-          <LogementCard
-            key={logement.id}
-            cover={logement.cover}
-            title={logement.title}
-          />
+          <Link to={`/logement/${logement.id}`}>
+            <LogementCard
+              key={logement.id}
+              cover={logement.cover}
+              title={logement.title}
+            />
+          </Link>
         ))}
       </div>
       <div className="logements-nav">

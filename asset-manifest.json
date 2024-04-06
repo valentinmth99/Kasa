@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Kasa/static/css/main.76fa640c.css",
+    "main.js": "/Kasa/static/js/main.b2c61d77.js",
+    "index.html": "/Kasa/index.html",
+    "main.76fa640c.css.map": "/Kasa/static/css/main.76fa640c.css.map",
+    "main.b2c61d77.js.map": "/Kasa/static/js/main.b2c61d77.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.76fa640c.css",
+    "static/js/main.b2c61d77.js"
+  ]
+}

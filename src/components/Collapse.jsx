@@ -34,8 +34,8 @@ function Collapse({ data, className }) {
                 activeIndexes.includes(index) ? "visible" : "hidden"
               }`}
             >
-              {item.text.map((equipement) => (
-                <li>{equipement}</li>
+              {item.text.map((equipement, index) => (
+                <li key={"equipement" + (index + 1)}>{equipement}</li>
               ))}
             </ul>
           ) : (

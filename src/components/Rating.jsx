@@ -9,12 +9,17 @@ function Rating({ rating }) {
   return (
     <div>
       {activeArray.map((number) => (
-        <img src="../assets/star-active.svg" alt={`Etoile active${number}`} />
+        <img
+          src="../assets/star-active.svg"
+          alt={`Etoile active${number}`}
+          key={"ratingActive" + number}
+        />
       ))}
       {inactiveArray.map((number) => (
         <img
           src="../assets/star-inactive.svg"
           alt={`Etoile inactive${number}`}
+          key={"ratingInactive" + number}
         />
       ))}
     </div>

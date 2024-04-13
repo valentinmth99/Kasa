@@ -24,7 +24,7 @@ function LogementList() {
     <div className="logements-container">
       <div className="logements-grid">
         {currentLogements.map((logement) => (
-          <Link to={`/logement/${logement.id}`}>
+          <Link to={`/logement/${logement.id}`} key={"link" + logement.id}>
             <LogementCard
               key={logement.id}
               cover={logement.cover}

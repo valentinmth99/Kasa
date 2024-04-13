@@ -39,7 +39,7 @@ function Accommodation() {
           <div className="logement-infos row2">
             <ul>
               {logement.tags.map((tag) => {
-                return <li>{tag}</li>;
+                return <li key={tag + logement.id}>{tag}</li>;
               })}
             </ul>
             <Rating rating={logement.rating} />
